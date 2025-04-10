@@ -1,10 +1,69 @@
 \documentclass{article}
-\usepackage{amsmath}
+\usepackage{amsmath, braket}
 \usepackage{xepersian}
 \settextfont[
   BoldFont={Vazir-Bold.ttf}
 ]{Vazir.ttf}
+\title{
+    اطلاعات کوانتومی
+    
+    تمرین سری اول 
+}
+\author{
+    علیرضا رضایی
+    \\
+    610103043
+}
+\date{
+    \today
+}
 
 \begin{document}
-سلام
+\maketitle
+
+\section*{
+ سوال 1   
+}
+
+\subsection*{(a}
+\begin{align*}
+U_{NOT} = \ket{0}\bra{1} + \ket{1}\bra{0}
+\end{align*}
+
+\subsection*{(b}
+\begin{align*}
+    \begin{aligned}        
+        &\ket{0}\bra{1} =\begin{pmatrix}
+            0 & 1\\
+            0 & 0
+        \end{pmatrix}\\
+        &\ket{1}\bra{0} = \begin{pmatrix}
+            0 & 0\\
+            1 & 0
+        \end{pmatrix}
+    \end{aligned}
+    \Rightarrow U_{NOT} = \begin{pmatrix}
+        0 & 1\\
+        1 & 0
+    \end{pmatrix}
+\end{align*}
+
+\subsection*{(c}
+\begin{align*}
+    \begin{aligned}        
+        &\ket{0}\bra{1} = \frac{1}{2}\begin{pmatrix}
+            1 & -1\\
+            1 & -1
+        \end{pmatrix}\\
+        &\ket{1}\bra{0} = \frac{1}{2}\begin{pmatrix}
+            1 & 1\\
+            -1 & -1
+        \end{pmatrix}
+    \end{aligned}
+    \Rightarrow U_{NOT} = \begin{pmatrix}
+        0 & 1\\
+        1 & 0
+    \end{pmatrix}
+\end{align*}
+
 \end{document}
